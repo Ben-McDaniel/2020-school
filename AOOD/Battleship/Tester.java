@@ -7,7 +7,7 @@ public class Tester{
         Position p2 = new Position(2,2); 
     //     Position p3 = new Position(5,5);
 
-        Position p4 = new Position (1,1);
+        Position p4 = new Position (4,4);
 
         // System.out.println("Position 1 Output:");
         // System.out.println("Row: " + p1.row());
@@ -44,17 +44,24 @@ public class Tester{
         // System.out.println(bg1.boatInitial(p1));
 
 
-        Ocean oc = new Ocean();
-        oc.placeBoat("battleship", "v", p4);
-        oc.viewOcean();
-        System.out.println();
-        oc.placeBoat("aircraft carrier", "h", p2);
-        oc.viewOcean();
-        System.out.println();
-        oc.shootAt(p4);
-        System.out.println(oc.hit(p4));
-        System.out.println(oc.boatInital(p4));
-        System.out.println(oc.boatName(p4));
-        
+        // Ocean oc = new Ocean();
+        // oc.placeBoat("battleship", "v", p4);
+        // oc.viewOcean();
+        // System.out.println();
+        // oc.placeBoat("aircraft carrier", "h", p2);
+        // oc.viewOcean();
+        // System.out.println();
+        // oc.shootAt(p4);
+        // System.out.println(oc.hit(p4));
+        // System.out.println(oc.boatInital(p4));
+        // System.out.println(oc.boatName(p4));
+        // oc.viewOcean();
+        // System.out.println();
+        // oc.placeAllBoats();
+        // oc.viewOcean();
+
+        BattleshipPlayer player = new BattleshipPlayer();
+        BattleshipGame game = new BattleshipGame(player);
+        System.out.println(game.play());
     }
 }
